@@ -51,14 +51,29 @@ footer {
 
 /* ... your existing styles ... */
 
+/* ... your existing styles ... */
+
 /* Add this CSS for responsive navigation */
 #menu-toggle {
     display: none;
     cursor: pointer;
 }
 
+#close-btn {
+    display: none;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 600px) {
     #menu-toggle {
+        display: block;
+        text-align: right;
+        padding: 10px;
+        background-color: #333;
+        color: white;
+    }
+
+    #close-btn {
         display: block;
         text-align: right;
         padding: 10px;
