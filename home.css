@@ -1,21 +1,9 @@
 body {
-    font-family: Cambria,Cochin, Georgia, Times, 'Times New Roman', serif,Arial,'Raleway', sans-serif;
-    background-color: #ffffff;   
-    color: #333;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-
- 
- h2{
-    text-align: center;
-     text-decoration: none;
-     font-variant: small-caps;
-     color: #051937;
-      font-family: Cambria,Cochin, Georgia, Times, 'Times New Roman', serif,Arial,'Raleway', sans-serif;
- }
- 
 header, nav, section, footer {
     margin: 20px;
     padding: 20px;
@@ -29,18 +17,8 @@ header {
 
 nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     background-color: #333;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-}
-
-nav li {
-    margin: 0 10px;
 }
 
 nav a {
@@ -70,10 +48,6 @@ footer {
     padding: 10px;
 }
 
-#menu-toggle {
-    display: none;
-    cursor: pointer;
-}
 
 /* ... your existing styles ... */
 
