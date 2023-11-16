@@ -7,82 +7,68 @@ body {
  }
   
 
-.sticky-header {
+header, nav, section, footer {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+header {
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+#menu-toggle, #close-btn {
+    display: none;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #051937;
-    background-repeat: no-repeat;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 100;
-}
-
-.sticky-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-/* Dropdown styles */
-.dropdown {
-    position: relative;
-}
-
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
+    right: 0;
+    height: 100%;
     background-color: #333;
+    width: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+nav ul {
+    padding: 20px;
     list-style: none;
-    margin: 0;
-    padding: 0;
-    min-width: 180px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    padding-bottom: 0;
 }
 
-.dropdown:hover .dropdown-menu {
-    display: block;
+nav li {
+    margin: 10px 0;
 }
 
-.dropdown-menu li {
-    padding: 10px;
-}
-
-/* Additional styles for better user experience (optional) */
-.dropdown a {
-    text-decoration: none;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Arial, 'Raleway', sans-serif;
-}
-
-.dropdown a:hover {
-    text-decoration: underline;
-    color: whitesmoke;
-}
-
-/* Styling for the dropdown icon */
-.dropdown-icon {
-    color: #F7B318;
-    font-size: 14px;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.nav-links li {
-    margin-right: 20px;
-}
-
-.nav-links a {
-    text-decoration: none;
+nav a {
     color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Arial, 'Raleway', sans-serif;
+    text-decoration: none;
+}
+
+section {
+    margin-top: 20px;
+}
+
+#hero {
+    background-color: #e6e6e6;
+    text-align: center;
+    padding: 50px;
+}
+
+#featured-products {
+    background-color: #f9f9f9;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
 }
 
 /* Media queries for responsive design */
