@@ -1,38 +1,107 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Cambria,Cochin, Georgia, Times, 'Times New Roman', serif,Arial,'Raleway', sans-serif;
+    background-color: #ffffff;   
+    color: #333;
     margin: 0;
     padding: 0;
 }
 
-header, nav, section, footer {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ddd;
-}
-
-header {
+.sticky-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #051937;
+    background-repeat: no-repeat;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect */
+    z-index: 100; /* Set a high z-index to ensure it's on top of other content */
+ 
+ }
+ 
+ h2{
     text-align: center;
-    background-color: #f5f5f5;
-}
-
-/* Add this CSS for the navigation */
-nav {
-    display: flex;
-    justify-content: flex-end; /* Align items to the right */
-    background-color: #333;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-}
-
-nav li {
-    margin: 0 10px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-}
+     text-decoration: none;
+     font-variant: small-caps;
+     color: #051937;
+      font-family: Cambria,Cochin, Georgia, Times, 'Times New Roman', serif,Arial,'Raleway', sans-serif;
+ }
+ 
+ h1{
+     text-decoration: none;
+     font-variant: small-caps;
+     color: #ffffff;
+     font-family: Cambria,Cochin, Georgia, Times, 'Times New Roman', serif,Arial,'Raleway', sans-serif;
+ }
+ 
+ 
+ nav {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 20px;
+ }
+ 
+ 
+ 
+ /* Dropdown styles */
+ .dropdown {
+     position: relative;
+ }
+ 
+ .dropdown-menu {
+     display: none;
+     position: absolute;
+     top: 100%;
+     left: 0;
+     background-color: #333;
+     list-style: none;
+     margin: 0px;
+     padding:0px;
+     min-width: 180px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1; /* Add this line it brings the drop down above the slide share*/
+      padding-bottom: 0px;
+ }
+ 
+ .dropdown:hover .dropdown-menu {
+     display: block;
+ }
+ 
+ .dropdown-menu li {
+     padding: 10px;
+ }
+ 
+ /* Additional styles for better user experience (optional) */
+ .dropdown a {
+     text-decoration: none;
+      font-family: Cambria,Cochin, Georgia, Times, 'Times New Roman', serif,Arial,'Raleway', sans-serif;
+ 
+ }
+ 
+ .dropdown a:hover {
+     text-decoration: underline;
+     color: whitesmoke;
+ }
+ 
+ /* Styling for the dropdown icon */
+ .dropdown-icon {
+     color: #F7B318;
+     font-size: 14px;
+     /*margin-left: 2px;  Adjust the spacing as needed */
+ }
+ 
+ .nav-links {
+     list-style: none;
+     display: flex;
+ }
+ 
+ .nav-links li {
+     margin-right: 20px;
+ }
+ 
+ .nav-links a {
+     text-decoration: none;
+     color: white;
+      font-family: Cambria,Cochin, Georgia, Times, 'Times New Roman', serif,Arial,'Raleway', sans-serif;
+ }
+ 
