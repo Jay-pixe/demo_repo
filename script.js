@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     var menuToggle = document.getElementById('menu-toggle');
     var closeBtn = document.getElementById('close-btn');
-    var nav = document.querySelector('.sticky-header nav');
+    var nav = document.querySelector('nav');
     var body = document.querySelector('body');
 
     menuToggle.addEventListener('click', function () {
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function toggleNav(open) {
         if (open) {
-            nav.style.display = 'flex';
+            nav.style.display = 'block';
             body.classList.add('menu-open');
         } else {
             nav.style.display = 'none';
