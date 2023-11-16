@@ -105,18 +105,40 @@ body {
       font-family: Cambria,Cochin, Georgia, Times, 'Times New Roman', serif,Arial,'Raleway', sans-serif;
  }
 
-/* Media queries for responsive design */
+#menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 600px) {
+    #menu-toggle {
+        display: block;
+        text-align: right;
+        padding: 10px;
+        background-color: #333;
+        color: white;
+    }
+
     nav {
-        justify-content: center;
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        text-align: right;
     }
 
     nav ul {
         flex-direction: column;
-        text-align: center;
     }
 
     nav li {
         margin: 10px 0;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
     }
 }
