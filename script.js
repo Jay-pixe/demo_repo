@@ -1,24 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var menuToggle = document.getElementById('menu-toggle');
-    var closeBtn = document.getElementById('close-btn');
-    var nav = document.querySelector('nav');
-    var body = document.querySelector('body');
+    const menuIcon = document.querySelector('.menu-icon');
+    const nav = document.querySelector('.nav');
 
-    menuToggle.addEventListener('click', function () {
-        toggleNav(true);
+    menuIcon.addEventListener('click', function () {
+        nav.style.display = (nav.style.display === 'flex') ? 'none' : 'flex';
     });
-
-    closeBtn.addEventListener('click', function () {
-        toggleNav(false);
-    });
-
-    function toggleNav(open) {
-        if (open) {
-            nav.style.display = 'block';
-            body.classList.add('menu-open');
-        } else {
-            nav.style.display = 'none';
-            body.classList.remove('menu-open');
-        }
-    }
 });
