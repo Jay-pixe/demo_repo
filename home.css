@@ -68,7 +68,40 @@ footer {
     padding: 10px;
 }
 
-/* Media queries for responsive design */
+
+
+ /* ... your existing styles ... */
+
+#menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+#close-btn {
+    display: none;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
 @media screen and (max-width: 600px) {
     #menu-toggle {
         display: block;
@@ -88,6 +121,27 @@ footer {
 
     nav {
         display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        background-color: #333;
+        width: 0;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
     }
 
     body.menu-open nav {
