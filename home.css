@@ -110,6 +110,14 @@ body {
     cursor: pointer;
 }
 
+/* ... your existing styles ... */
+
+/* Add this CSS for responsive navigation */
+#menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 600px) {
     #menu-toggle {
         display: block;
