@@ -85,12 +85,7 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Arial, 'Raleway', sans-serif;
 }
 
-/* Add this CSS for responsive navigation */
-#menu-toggle, #close-btn {
-    display: none;
-    cursor: pointer;
-}
-
+/* Media queries for responsive design */
 @media screen and (max-width: 600px) {
     #menu-toggle {
         display: block;
@@ -108,32 +103,48 @@ body {
         color: white;
     }
 
-    .sticky-header nav {
+    nav {
         display: none;
         position: fixed;
         top: 0;
         right: 0;
         height: 100%;
         background-color: #333;
-        width: 0;
+        width: 80%; /* Adjust the width as needed */
         overflow-x: hidden;
         transition: 0.5s;
     }
 
-    .sticky-header nav ul {
-        flex-direction: column;
+    nav ul {
+        padding: 20px;
+        list-style: none;
     }
 
-    .sticky-header nav li {
+    nav li {
         margin: 10px 0;
     }
 
-    .sticky-header nav a {
+    nav a {
         color: white;
         text-decoration: none;
     }
 
-    .sticky-header body.menu-open nav {
-        width: 80%; /* Adjust the width as needed */
+    body.menu-open nav {
+        display: block;
+    }
+}
+
+/* Additional style for larger screens */
+@media screen and (min-width: 601px) {
+    nav {
+        display: block;
+        width: auto;
+        position: relative;
+        height: auto;
+    }
+
+    #menu-toggle,
+    #close-btn {
+        display: none;
     }
 }
