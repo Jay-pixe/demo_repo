@@ -3,24 +3,23 @@ document.addEventListener('DOMContentLoaded', function () {
     var menuToggle = document.getElementById('menu-toggle');
     var closeBtn = document.getElementById('close-btn');
     var nav = document.querySelector('nav');
+    var body = document.querySelector('body');
 
     menuToggle.addEventListener('click', function () {
-        toggleNav();
+        toggleNav(true);
     });
 
     closeBtn.addEventListener('click', function () {
-        toggleNav();
+        toggleNav(false);
     });
 
-    function toggleNav() {
-        if (window.getComputedStyle(nav).display === 'none') {
-            nav.style.display = 'flex';
-            menuToggle.style.display = 'none';
-            closeBtn.style.display = 'block';
+    function toggleNav(open) {
+        if (open) {
+            nav.style.display = 'block';
+            body.classList.add('menu-open');
         } else {
             nav.style.display = 'none';
-            menuToggle.style.display = 'block';
-            closeBtn.style.display = 'none';
+            body.classList.remove('menu-open');
         }
     }
 });
