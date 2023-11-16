@@ -1,0 +1,38 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, section, footer {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+header {
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+/* Add this CSS for the navigation */
+nav {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
