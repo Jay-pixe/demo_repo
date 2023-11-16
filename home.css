@@ -104,4 +104,19 @@ body {
      color: white;
       font-family: Cambria,Cochin, Georgia, Times, 'Times New Roman', serif,Arial,'Raleway', sans-serif;
  }
- 
+
+/* Media queries for responsive design */
+@media screen and (max-width: 600px) {
+    nav {
+        justify-content: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+}
