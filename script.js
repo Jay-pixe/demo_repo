@@ -1,4 +1,3 @@
-// Add this JavaScript for responsive navigation
 document.addEventListener('DOMContentLoaded', function () {
     var menuToggle = document.getElementById('menu-toggle');
     var closeBtn = document.getElementById('close-btn');
