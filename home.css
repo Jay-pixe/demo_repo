@@ -110,3 +110,66 @@ nav ul li a {
 }
 
 
+.slideshow {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    transition: opacity 3s ease-in-out;
+}
+
+.slide {
+    display: none;
+}
+
+img {
+    width: 100%; /* Make the images responsive */
+    height: 600px;
+}
+
+.slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2em;
+    z-index: 1;
+    text-align: center;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.prev {
+    left: 16px;
+}
+
+.next {
+    right: 16px;
+}
+
+.fade {
+    
+    animation: fade 3s ease-in-out;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .slogan {
+        font-size: 1.5em; /* Adjust the font size for smaller screens */
+    }
+}
+
+
