@@ -108,3 +108,70 @@ nav ul li a {
         display: flex;
     }
 }
+
+/* Styles for the slideshow section */
+.slideshow {
+    width: 100%;
+    height: 600px; /* Adjust the height as needed */
+    overflow: hidden;
+    position: relative;
+}
+
+
+.slideshow img {   /*This is to adjust the image settings*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain image aspect ratio and cover the container */
+    position: absolute;
+    opacity: 0;
+    transition: opacity 3s ease-in-out; /* Transition effect for opacity */ /*This was 1s then i changed to 3s it make it slow and nice*/
+}
+
+img.active {
+    opacity: 1;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 16px;
+    font-size: 20px;
+    user-select: none;
+}
+
+.prev {
+    color: white;
+    left: 0;
+}
+
+.next {
+    color: white;
+    right: 0;
+}
+.slogan {
+    position: absolute; /* Position the slogan absolutely */
+    top: 50%; /* Position it in the vertical center */
+    left: 50%; /* Position it in the horizontal center */
+    transform: translate(-50%, -50%); /* Center it precisely */
+    color: white;
+     z-index: 1; /* Ensure the slogan is above the images */
+}
+
+.slogan {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff; /* Choose a suitable text color for contrast */
+    text-align: center;
+    padding: 0px;
+    /*background-color: #007BFF;  Choose a suitable background color */
+    border-radius: 10px; /* Add rounded corners */
+    /* Add any additional styles to make it attractive */
+}
+.slogan {
+    /* ... (previous styles) ... */
+    transition: background-color 0.3s, color 0.3s;
+}
+
