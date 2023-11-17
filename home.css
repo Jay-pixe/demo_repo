@@ -74,6 +74,16 @@ nav ul li a {
     .menu-icon {
         display: block;
     }
+.logo {
+    font-size: 1.5em;
+}
+
+@media only screen and (max-width: 768px) {
+    .logo {
+        font-size: 1.2em; /* Adjust the size for smaller screens */
+    }
+    
+}
 
     nav {
         display: none;
