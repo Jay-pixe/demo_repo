@@ -80,7 +80,7 @@ nav ul li a {
 
 @media only screen and (max-width: 768px) {
     .logo {
-        font-size: 1.2em; /* Adjust the size for smaller screens */
+        font-size: 1.0em; /* Adjust the size for smaller screens */
     }
     
 }
