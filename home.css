@@ -73,14 +73,16 @@ nav ul li a {
 @media only screen and (max-width: 768px) {
     .menu-icon {
         display: block;
+       
     }
+
 .logo {
     font-size: 1.5em;
 }
 
 @media only screen and (max-width: 768px) {
     .logo {
-        font-size: 1.0em; /* Adjust the size for smaller screens */
+        font-size: 1.2em; /* Adjust the size for smaller screens */
     }
     
 }
@@ -114,9 +116,9 @@ nav ul li a {
     position: relative;
     width: 100%;
     max-width: 100%;
+    height: 600px;
     margin: auto;
     overflow: hidden;
-    transition: opacity 3s ease-in-out;
 }
 
 .slide {
@@ -160,10 +162,9 @@ img {
 }
 
 .fade {
-    
-    animation: fade 3s ease-in-out;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
 }
-
 
 @media only screen and (max-width: 768px) {
     .slogan {
@@ -171,4 +172,51 @@ img {
     }
 }
 
+/*This starts the about us*/
+.section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 400px;
+    background-color:white ;
+    color: #051937;
+    overflow: hidden; /* Hide content outside the section */
+}
+.left-content h2{
+    font-family: galano_grotesque, sans-serif;
+    color: #051937;
+}
 
+.left-content p{
+     font-family: Cambria,Cochin, Georgia, Times, 'Times New Roman', serif,Arial,'Raleway', sans-serif;
+    text-align: justify;
+    line-height: 25px;
+}
+.left-content {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 1s, opacity 1s;
+    margin: 15px;
+}
+
+.right-content {
+    width: 50%; /* Set a fixed width for the image */
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 1s, opacity 1s;
+}
+
+@media only screen and (max-width: 768px) {
+    .about-us {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text,
+    .company-image {
+        animation: none; /* Remove animation on smaller screens */
+        opacity: 1; /* Set opacity to 1 for immediate display */
+        transform: none; /* Remove any transforms applied by animation */
+    }
+}
