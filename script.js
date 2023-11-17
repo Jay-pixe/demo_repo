@@ -29,3 +29,33 @@ function showSlides() {
 function changeSlide(n) {
     showSlides(slideIndex += n);
 }
+
+
+//About Us
+document.addEventListener("DOMContentLoaded", function () {
+    window.addEventListener("scroll", function () {
+        var leftContent = document.querySelector(".left-content");
+        var rightContent = document.querySelector(".right-content");
+        var section = document.querySelector(".section");
+
+        var sectionPosition = section.getBoundingClientRect();
+        var windowHeight = window.innerHeight;
+
+        // Adjust the trigger point as needed
+        var triggerPoint = windowHeight * 0.6;
+
+        if (sectionPosition.top < triggerPoint && sectionPosition.bottom >= triggerPoint) {
+            leftContent.style.transform = "translateX(0)";
+            leftContent.style.opacity = 1;
+
+            rightContent.style.transform = "translateX(0)";
+            rightContent.style.opacity = 1;
+        } else {
+            leftContent.style.transform = "translateX(-100%)";
+            leftContent.style.opacity = 0;
+
+            rightContent.style.transform = "translateX(100%)";
+            rightContent.style.opacity = 0;
+        }
+    });
+});
