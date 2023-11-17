@@ -4,46 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
+    <script defer src="script.js"></script>
     <title>John Bitar and Co. Ltd</title>
 </head>
 <body>
 
-    <header>
-        <div class="logo">John Bitar and Co. Ltd</div>
-        <div class="nav-container">
-            <div class="nav">
-                <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Products</button>
-                    <div class="dropdown-content">
-                        <a href="#">Lumber</a>
-                        <a href="#">Slice Veneer</a>
-                        <a href="#">Rotary</a>
-                        <a href="#">Plywood</a>
-                        <a href="#">Molding</a>
-                    </div>
+<header>
+    <div class="logo">John Bitar and Co. Ltd</div>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776; Menu</div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li class="dropdown">
+                <a href="#products">Products</a>
+                <div class="dropdown-content">
+                    <a href="#lumber">Lumber</a>
+                    <a href="#veneer">Slice Veneer</a>
+                    <a href="#rotary">Rotary</a>
+                    <a href="#plywood">Plywood</a>
+                    <a href="#molding">Molding</a>
                 </div>
-                <a href="#">Sustainability</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Awards</button>
-                    <div class="dropdown-content">
-                        <a href="#">Sustainable Timber Sourcing</a>
-                        <a href="#">Certification and Compliance</a>
-                        <a href="#">Sustainable Practices</a>
-                        <a href="#">Partnerships</a>
-                        <a href="#">Collaborations</a>
-                    </div>
+            </li>
+            <li class="dropdown">
+                <a href="#sustainability">Sustainability</a>
+                <div class="dropdown-content">
+                    <a href="#sourcing">Sustainable Timber Sourcing</a>
+                    <a href="#certification">Certification and Compliance</a>
+                    <a href="#practices">Sustainable Practices</a>
+                    <a href="#partnerships">Partnerships & Collaborations </a>
                 </div>
-                <a href="#">Contact</a>
-                <a href="#">Ahmed</a>
-            </div>
-        </div>
-        <div class="menu-icon">&#9776;</div>
-    </header>
+            </li>
+            <li><a href="#awards">Awards</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <!-- Rest of your webpage content goes here -->
+<!-- Add your content sections here -->
 
-    <script src="script.js"></script>
 </body>
 </html>
