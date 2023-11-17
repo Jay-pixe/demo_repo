@@ -9,10 +9,11 @@ body {
 
 header {
     background-color: #333;
-    color: white;
-    padding: 15px;
+    color: #fff;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -22,36 +23,42 @@ header {
     font-size: 1.5em;
 }
 
-.nav-container {
+nav {
     display: flex;
 }
 
-.nav {
+nav ul {
+    list-style: none;
     display: flex;
 }
 
-.nav a, .dropbtn {
-    padding: 15px;
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
     text-decoration: none;
-    color: white;
-    text-align: center;
 }
 
 .dropdown {
     position: relative;
-    display: inline-block;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #333;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    width: 200px;
     z-index: 1;
 }
 
 .dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
     display: block;
+    text-decoration: none;
 }
 
 .dropdown:hover .dropdown-content {
@@ -60,27 +67,34 @@ header {
 
 .menu-icon {
     display: none;
-    font-size: 1.5em;
     cursor: pointer;
 }
 
-@media only screen and (max-width: 600px) {
-    .nav {
+@media only screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    nav {
         display: none;
-        flex-direction: column;
-        background-color: #333;
-        position: absolute;
+        position: fixed;
         top: 60px;
         right: 0;
         width: 100%;
+        background-color: #333;
     }
 
-    .nav a, .dropbtn {
-        width: 100%;
-        box-sizing: border-box;
+    nav ul {
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 10px;
     }
 
-    .menu-icon {
-        display: block;
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav.open {
+        display: flex;
     }
 }
