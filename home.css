@@ -124,7 +124,9 @@ nav ul li a {
 .slide {
     display: none;
 }
-
+img{
+    width: 100%;
+}
 /*there was an existing image id here of which i changed it and limited it just tot the slide share image*/
 .slideshow img{
     width: 100%;
